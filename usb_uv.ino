@@ -3,6 +3,7 @@
 #define INTERVAL 1000
 #define AVE_WINDOW 100 // 1〜100
 #define STATUS_OK 0
+#define VERSION "1.00"
 
 void setup()
 {
@@ -38,6 +39,8 @@ void loop()
     Serial.print(u32_val_result);
     Serial.print(";status=");
     Serial.print(STATUS_OK);
+    Serial.print(";version=");
+    Serial.print(VERSION);
     Serial.print("\n");
     u32_val_result = 0;
     su32_val_sum = 0;
